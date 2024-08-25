@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    class test{
+        ..var 
+        ..fun
+    }
+    
+    const xyz = new test;
+    xyz.var 
+    xyz.fun
+ const tirth = new Test(12);
+-->
+
+<script>
+
+        
+// const xyz = new Promise(function(success,fail){
+//     return success("hi")
+// });
+
+// console.log(xyz)
+
+const myPromise = new Promise((s,f)=>{
+
+    var x;
+  if(x)
+  {
+    return s("Connected..!")
+  }
+  else 
+  {
+    return f("Disonnected..!")
+  }
+})
+
+// console.log(myPromise)
+
+myPromise.then(
+    (t1)=>{console.log(t1)}
+    ,(t2)=>{console.log(t2)}
+)
+
+</script>
+
+
+</body>
+</html>

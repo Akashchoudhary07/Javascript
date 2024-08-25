@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz 
+        {
+            animation: test1 1s forwards;
+        }
+
+        @keyframes test1 {
+            to{transform: translate(50px,0);}
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+     Mouse : click,dblclick,move,over,out,enter,leave 
+    Keyboard : press,up,down
+    Form : submit,blur,change,focus 
+    Window: load,unload,resize,scroll
+ -->
+ <h1 class="t1">
+    Hello
+ </h1>
+
+ <button id="b1">Click</button>
+
+    <script>
+
+        const h1 = document.querySelector('.t1');
+btn1 = document.getElementById('b1')
+
+// btn1.addEventListener("click",GetEffect)
+        
+//         function GetEffect()
+//         {
+//             h1.innerHTML ="Frank..!"
+//             h1.style.color="blue"
+//             h1.className ="xyz"
+//         }
+
+// btn1.addEventListener("click",  function GetEffect()
+//         {
+//             h1.innerHTML ="Frank..!"
+//             h1.style.color="blue"
+//             h1.className ="xyz"
+//         })
+
+// btn1.addEventListener("click",  function ()
+//         {
+//             h1.innerHTML ="Frank..!"
+//             h1.style.color="blue"
+//             h1.className ="xyz"
+//         })
+
+
+btn1.addEventListener("mouseover",   ()=>
+        {
+            h1.innerHTML ="Frank..!"
+            h1.style.color="blue"
+            h1.className ="xyz"
+        })
+        
+      
+
+    </script>
+    
+</body>
+</html>

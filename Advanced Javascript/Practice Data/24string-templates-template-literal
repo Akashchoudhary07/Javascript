@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="test"></div>
+
+
+    <script>
+      students = [
+        {
+          id: 1,
+          name: "Aakash",
+        },
+        {
+             id: 2,
+              name: "Sid"
+         },
+        { 
+            id: 3,
+             name: "Krish"
+         }
+      ];
+
+      html = ` <table border="1">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+            </tr>
+            <tr>`;
+
+      students.map((v)=>{
+
+        html = html+`
+
+        <td>${v.id}</td>
+        <td>${v.name}</td>
+        </tr>
+       
+        
+       
+
+            `
+
+
+      })
+
+      document.querySelector('.test').innerHTML = html+" </table>"
+
+    //    document.write(students[0].name);
+    //    document.write(students[1].name);
+    //    document.write(students[2].name);
+
+
+
+
+
+
+
+
+      // name = "<h1>Vishal</h1>"
+
+      name = "Vishal";
+      // document.write("<h1>"+name+"</h1>")
+      document.write(`<h1>${name}</h1>`);
+
+      // str = "hi hello \"how\" are you MOTO..!";
+
+      // str = 'hi hello "how" are you MOTO..!';
+
+      // str = `'hi hello "<u style="color:blue">how</u>" are you MOTO..!' `
+
+      str = `hi hello 
+        "how" are you 
+        MOTO.
+        
+        dfg
+        <table border="1" style="background: lightblue;">
+        <tr>
+            <th>Id</th>
+            <th>Id</th>
+            <th>Id</th>
+            <th>Id</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            
+        </tr>
+    </table>
+        
+        d
+        fg
+        d
+        fgd.!`;
+
+      document.write(str);
+    </script>
+  </body>
+</html>

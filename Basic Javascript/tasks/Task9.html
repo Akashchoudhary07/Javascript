@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(208, 0, 255);
+            text-align: center;
+            color: aliceblue;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button{
+            font-size: 30px;
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+       <!-- Images Change on different different buttons  -->
+
+
+       <h1>Images Change on different different buttons</h1>
+
+    <div class="container">
+        <div class="box">
+            <img src="" alt="" id="img-1" height="300px" width="300px">
+            <br>
+            <button onclick="click1()">Click</button>
+        </div>
+        <div class="box">
+            <img src="../images/image-1.jpg" id="img-2" alt="" height="300px" width="300px">
+            <br>
+            <button onclick="click2()">Click</button>
+        </div>
+        <div class="box">
+            <img src="../images/image-1.jpg" id="img-3" alt="" height="300px" width="300px">
+            <br>
+            <button onclick="click3()">Click</button>
+        </div>
+    </div>
+
+    <script>
+         
+         img_1 = document.getElementById('img-1');
+         img_2 = document.getElementById('img-2');
+         img_3 = document.getElementById('img-3');
+
+         function click1(){
+            img_1.src = "../images/image-1.jpg"
+         }
+
+         function click2(){
+            img_2.src = "../images/image-2.jpg"
+         }
+
+         function click3(){
+            if(img_3.src.match("../images/image-1.jpg"))
+            {
+                img_3.src = "../images/image-2.jpg";
+            }
+            else if(img_3.src.match("../images/image-2.jpg"))
+            {
+                img_3.src = "../images/image-3.jpg";
+            }
+            else
+            {
+                img_3.src = "../images/image-1.jpg";
+            }
+            
+         }
+
+    </script>
+</body>
+</html>

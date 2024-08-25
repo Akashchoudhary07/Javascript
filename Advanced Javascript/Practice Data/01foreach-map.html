@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const radius =[1,2,3,4];
+
+       const a = radius.forEach((v,i,a)=>{
+            return (v)
+        })
+
+        console.log(a)
+
+      const b=    radius.map((v,i,a)=>{
+           return(v)
+        })
+
+        console.log(b)
+
+
+
+     const x =  function Area()
+      {
+        const op=[];
+        for(i=0;i<radius.length;i++)
+        {
+           op.push(Math.PI*radius[i]*radius[i])
+        }
+        console.log(op)
+      }
+
+    //   Area()
+    x()
+
+        // console.log(3.141592653589793*2*2)
+        // console.log(radius**2);
+        // console.log(Math.PI);///3.141592653589793
+        // console.log(Math.pow(radius,2))
+
+        // console.log(Math.PI*radius[0]*radius[0])
+        // console.log(Math.PI*radius[1]*radius[1])
+        // console.log(Math.PI*radius[2]*radius[2])
+        // console.log(Math.PI*radius[3]*radius[3])
+
+
+
+        const arr = [1,2,3,4];//1+2+3+4 =10
+        sum =0;
+
+      function getSum()
+      {
+        for(i=0;i<arr.length;i++) // 3;3<4;3++
+        {
+            // x= x+2 // x+=2
+            // sum = arr[i]+sum;//4+6=10
+            sum+=arr[i]
+            // sum=6
+            // console.log(arr[i]);//2
+        }
+
+        return (sum)
+      }
+
+     console.log( getSum())
+
+
+
+    </script>
+    
+</body>
+</html>

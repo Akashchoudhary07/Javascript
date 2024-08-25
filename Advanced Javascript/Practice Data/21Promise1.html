@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function Emotions(emotion)
+        {
+            console.log(emotion)
+        }
+
+        const AakashPromise = new Promise((call,noCall)=>{
+
+            if(call)
+            {
+                return call("HI janu..!")
+            }
+            else
+            {
+                return noCall("Bhad me jaa..!")
+            }
+
+        })
+
+        AakashPromise.then(
+            (khushi)=>{ Emotions(khushi)},
+            (Gussa)=>{Emotions(Gussa)})
+
+
+    </script>
+    
+</body>
+</html>

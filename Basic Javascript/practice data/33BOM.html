@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- BOM : Browser Object Model -->
+
+<a href="test123.html">GO to that page</a>
+
+    <button onclick="test1()">
+        Forward
+    </button>
+
+    <script>
+document.write(screen.width)
+document.write(window.location.pathname)
+document.write(window.location.hostname)
+
+function test1()
+{
+    window.history.forward();
+}
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    //    arr = ["Frank","Akash","Vishal","Sid"];     
+
+    //    document.write( arr.join(" * "))   
+
+
+        // class Parent 
+        // {
+        //      x=12
+        //      test()
+        //      {
+        //         var y=12
+        //         console.log("Prop")
+        //      }
+        // }
+
+        // class Child extends Parent
+        // {
+
+        //     test1()
+        //     {
+        //         console.log("Papa property please..!")
+        //     }
+        // }
+
+        // const c1 = new Child;
+        // c1.test1();
+        // c1.test();
+
+
+        // const obj = new A;
+        // obj.test();
+
+
+        class Frank 
+        {
+          
+            test()
+            {
+                var x=12;
+                console.log(x)
+            }
+        }
+
+        class Mother extends Frank
+        {
+            test1()
+            {
+                var y=111100;
+                console.log(y)
+            }
+        }
+
+        class Son extends Mother
+        {
+
+        }
+
+       
+const y1 = new Son;
+y1.test1();
+y1.test();
+
+       
+
+
+    </script>
+</body>
+</html>

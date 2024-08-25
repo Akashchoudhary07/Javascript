@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+// Default Parameter
+
+        // function Test(x="Ashish")
+        // {
+        //     document.write(x+"<br>")
+        // }
+        // Test();//
+        // Test(1);//1
+        // Test(2);//2
+        // Test("Pata Nai");//Pata Nai
+
+        const obj = {
+            fname:"Frank123",
+            lname:"Patel123",
+            fullName:function ()
+            {
+                return (this.fname + " " + this.lname)
+            }
+        }
+
+        document.write(obj.fullName())
+
+    </script>
+    
+</body>
+</html>

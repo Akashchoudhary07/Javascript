@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            margin: 0 auto;
+            flex-wrap: wrap;
+            background-color: brown;
+            padding: 35px;
+            overflow: hidden;
+            height: 200px;
+        }
+        .area{
+            display: flex;
+            flex-wrap: wrap;
+            width: 35%;
+            margin: 0 auto;
+            animation: slider 10s 1;
+            transform: translate(0,-100%);
+            /* border: 2px solid; */
+        }
+
+        @keyframes slider{
+            0%{
+                transform: translate(0,100%);
+                opacity: 0;
+            }
+            33%{
+                transform: translate(0,0);
+                opacity: 1;
+            }
+            66%{
+                transform: translate(0,-35%);
+                opacity: 1;
+            }
+            100%{
+                transform: translate(0,-70%);
+                opacity: 1;
+            
+            }
+
+        }
+
+        .card {
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 40px 40px 80px 40px;
+        }
+
+        .card1 , .card2 , .card3 , .card4 , .card5 , .card6{
+            opacity: 0;
+            transition: 1s;
+        }
+
+    </style>
+
+</head>
+
+<body onscroll="geteffect()">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+
+
+
+    <div id="container">
+            <div class="area">
+                <div class="card card1"></div>
+                <div class="card card2"></div>
+                <div class="card card3"></div>
+                <div class="card card4"></div>
+                <div class="card card5"></div>
+                <div class="card card6"></div>
+            </div>
+
+    </div>
+
+
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sapiente voluptate, recusandae suscipit tenetur
+        repellat excepturi natus, optio eum corporis totam quod tempora a quae aspernatur ut maiores porro voluptates.
+        Dolores ratione libero quasi culpa exercitationem voluptates, quas pariatur. Earum, voluptas eligendi.
+        Perferendis, vitae iste. Hic quia voluptas mollitia error.</p>
+    
+
+
+
+    <script>
+
+        c1 = document.querySelector('.card1');
+        c2 = document.querySelector('.card2');
+        c3 = document.querySelector('.card3');
+        c4 = document.querySelector('.card4');
+        c5 = document.querySelector('.card5');
+        c6 = document.querySelector('.card6');
+        // areea = document.querySelector('.area');
+        function geteffect() {
+            if (document.documentElement.scrollTop > 300) {
+                c1.style.transform = "translate(0,0)";
+                c2.style.transform = "translate(0,0)";
+                c3.style.transform = "translate(0,0)";
+                c4.style.transform = "translate(0,0)";
+                c5.style.transform = "translate(0,0)";
+                c6.style.transform = "translate(0,0)";
+                c1.style.opacity = "1";
+                c2.style.opacity = "1";
+                c3.style.opacity = "1";
+                c4.style.opacity = "1";
+                c5.style.opacity = "1";
+                c6.style.opacity = "1";
+            }
+            else {
+                c1.style.transform = "translate(0,-100%)";
+                c2.style.transform = "translate(0,-100%)";
+                c3.style.transform = "translate(0,-100%)";
+                c4.style.transform = "translate(0,-100%)";
+                c5.style.transform = "translate(0,-100%)";
+                c6.style.transform = "translate(0,-100%)";
+                c1.style.opacity = "0";
+                c2.style.opacity = "0";
+                c3.style.opacity = "0";
+                c4.style.opacity = "0";
+                c5.style.opacity = "0";
+                c6.style.opacity = "0";
+            }
+        }
+    </script>
+</body>
+
+</html>

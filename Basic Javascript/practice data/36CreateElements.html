@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="d1">
+        <p>para 1</p>
+        <p id="p1">para 2</p>
+        <!-- <h3>heading 3</h3> -->
+    </div>
+    
+    <script>
+
+d1 = document.getElementById('d1')
+
+p1 = document.getElementById('p1')
+        h3_tag = document.createElement('h3');//<h3></h3>
+        h3_text = document.createTextNode('Heading 3');// Heading 3
+
+        h3_tag.append(h3_text);//<h3>Heading 3</h3>
+
+        // d1.append(h3_tag)
+        // d1.appendChild(h3_tag)
+
+        // d1.before( h3_tag)
+
+        d1.insertBefore(h3_tag,p1)
+
+
+
+
+    </script>
+</body>
+</html>

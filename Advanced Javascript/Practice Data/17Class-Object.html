@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        class Frank 
+        {
+            x=12;
+            y=34;
+
+            a =  function name() {
+                
+                document.write("fun 1<br>")
+            }
+
+            b =  function () {
+                
+                document.write("Anonymous Function..!<br>")
+            }
+
+            c =   ()=> {
+                
+                document.write("Arrow Fun<br>")
+            }
+
+            test()
+            {
+                document.write("something..!<br>")
+            }
+
+            test1()
+            {
+               return ("something123..!")
+            }
+        }
+
+        const xyz = new Frank;
+        xyz.b();
+        xyz.a();
+xyz.c();
+         document.write(xyz.x)
+         document.write(xyz.y)
+        xyz.test()
+        document.write(xyz.test1())
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <img src="../images/image-1.jpg" id="i1" alt="No Image" height="350px" width="100%">
+
+    <button onclick="ChangeImg()">Change Images</button>
+    <script>
+        img1 = document.getElementById('i1')
+
+        console.log(img1.src);//http://127.0.0.1:5500/i1.jpg
+
+       function ChangeImg()
+       {
+        if(img1.src.match("../images/image-1.jpg"))
+        {
+            img1.src = "../images/image-2.jpg"
+        }
+        else if(img1.src.match("../images/image-2.jpg"))
+        {
+            img1.src = "../images/image-3.jpg"
+        }
+        else if(img1.src.match("../images/image-3.jpg"))
+        {
+            img1.src = "../images/image-4.jpg"
+        }
+        else
+        {
+            img1.src = "../images/image-1.jpg"
+        }
+
+        // setTimeout("ChangeImg()",1000)
+       
+       }
+
+       setInterval("ChangeImg()",5000)
+
+    </script>
+</body>
+</html>

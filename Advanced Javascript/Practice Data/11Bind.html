@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const students = {
+           
+            fullName:function(){
+                return this.fname + " "+ this.lname +"<br>"
+            }
+        }
+
+        const student1 ={
+            fname:"Nirav",
+            lname:"Patel"
+        }
+        const student2 ={
+            fname:"Vishal",
+            lname:"DontKnow"
+        }
+        const student3 ={
+            fname:"Devarsh",
+            lname:"Doshi"
+        }
+
+       const s1 =(students.fullName.bind(student1))
+      const s2 =(students.fullName.bind(student2))
+       const s3 =(students.fullName.bind(student3))
+
+       document.write(s1())
+       document.write(s2())
+       document.write(s3())
+    </script>
+    
+</body>
+</html>

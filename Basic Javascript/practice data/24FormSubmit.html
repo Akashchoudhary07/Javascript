@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <form onsubmit="return ValidateForm()">
+    Name: <input type="text" id="nm">
+    <span id="nmErr"></span>
+    <br>
+    <!-- <input type="submit" value="Validate" onclick="ValidateForm()"> -->
+
+    <!-- <input type="submit" value="Validate" onclick="return ValidateForm()"> -->
+    <input type="submit">
+   </form>
+   
+
+    <script>
+
+        name1 = document.getElementById('nm')
+        sp1 = document.getElementById('nmErr')
+        console.log(name1.value)
+
+      function ValidateForm()
+      {
+        if(name1.value=="")
+        {
+            // alert("Required..!")
+            name1.style.border ="2px solid red"
+            sp1.innerHTML = "* Required..!"
+            sp1.style.color="red"
+            return false;
+        }
+        else 
+        {
+            name1.style.border ="2px solid green"
+            sp1.innerHTML = ""
+            
+            // sp1.style.color="green"
+        }
+      }
+        
+    </script>
+    
+</body>
+</html>

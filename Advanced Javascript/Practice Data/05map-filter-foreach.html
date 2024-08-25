@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const x = [12, 343, 56];
+
+    //   let t1 = x.forEach((v, i) => {
+    //     return i;
+    //   });
+
+      let t2 = x.map((v, i) => {
+        return v+100;
+      });
+
+      let t3 = x.filter((v, i) => {
+        return v%2==0;
+      });
+
+    //   console.log(t1)
+
+      console.log(t2,t3)
+    </script>
+  </body>
+</html>

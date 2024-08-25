@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // constructor : it's magical function which is called automatically when an object of a class is created
+
+        class Test 
+        {
+           x=  function f1()
+            {
+                document.write("f1<br>")
+            }
+
+           y= function ()
+            {
+                document.write("f2<br>")
+            }
+
+           z=  ()=>{
+            document.write("f3<br>")
+            }
+
+          
+
+            static test123()
+            {
+                document.write("f5<br>")
+            }
+
+            xyz()
+            {
+                document.write("f4<br>")
+            }
+
+            // constructor()
+            // {
+            //     document.write("123<br>")
+            // }
+
+            constructor(x)
+            {
+                document.write(x + "123<br>")
+            }
+        }
+
+        const tirth = new Test(12);
+        const tirth1 = new Test("hi");
+        const tirth2 = new Test([1,2,3]);
+        const tirth3 = new Test({n:123});
+        // tirth.x();
+        // tirth.y();
+        // tirth.z();
+        // tirth.xyz();
+        // Test.test123();
+    </script>
+    
+</body>
+</html>

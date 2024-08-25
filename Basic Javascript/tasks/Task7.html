@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Convert the indian currency into other country's money -->
+
+
+    Indian Rs:- <input type="text" id="rs">&nbsp;&nbsp;&nbsp;&nbsp;
+    Other currency:- <select id="country" onchange="currency()">
+        <option hidden>---Select the country---</option>
+        <option value="0.012">USA</option>
+        <option value="0.57">Egypt</option>
+        <option value="1.11">Russia</option>
+        <option value="0.044">UAE</option>
+        <option value="0.018">Australia</option>
+    </select>&nbsp;&nbsp;
+    <b id="res">______</b>
+
+    <script>
+        
+
+        ind_rs = document.getElementById('rs');
+        change = document.getElementById('country');
+
+        result = document.getElementById('res');
+
+        function currency(){
+            result.innerHTML = ind_rs.value*change.value;
+        }
+
+        
+
+    </script>
+
+
+</body>
+
+</html>

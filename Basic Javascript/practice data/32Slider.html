@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="slide1.avif" alt="" height="150px" width="100%">
+
+    <img src="slide3.avif" alt="" height="150px" width="100%">
+
+    <img src="slide2.avif" alt="" height="150px" width="100%">
+
+    <script>
+
+index =0;
+      function slider()
+      {
+       
+        const img_arr = document.getElementsByTagName('img');
+
+        // console.log(img_arr)
+
+        for(i=0;i<img_arr.length;i++)
+        {
+            img_arr[i].style.display ="none"
+        }
+
+        // console.log(i);//3
+
+        img_arr[index].style.display ="block"
+        index++;//3
+
+        if(index>=3)
+        {
+            index=0;
+        }
+
+        setTimeout("slider()",1000)
+      }
+
+      slider()
+     
+    </script>
+    
+</body>
+</html>

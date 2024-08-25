@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="b1">Get Text </button>
+    <button id="b2">Get JSON</button>
+    <button id="b3">Get API</button>
+
+    <h4 id="text"></h4>
+
+    <h5 id="a"></h5>
+
+    <script>
+
+        btn1 = document.getElementById('b1');
+        btn2 = document.getElementById('b2');
+        btn3 = document.getElementById('b3');
+
+        btn1.addEventListener('click',getText);
+        btn2.addEventListener('click',getJSON);
+        btn3.addEventListener('click',getAPI);
+
+
+      function getText() {
+        fetch("Likhdu.txt")
+          .then((res) => {
+            return res.text();
+          })
+          .then((data) => {
+           document.getElementById('text').innerHTML = (data);
+          });
+      }
+
+      function getJSON()
+      {
+        fetch('Akash.json')
+        .then((r)=>{return r.json()})
+        .then((data)=>{
+            document.getElementById('a').innerHTML= (data)
+        })
+      }
+
+      function getAPI()
+      {
+        fetch('https://jsonplaceholder.typicode.com/photos')
+        .then((r)=>{return r.json()})
+        .then((data)=>{
+
+         //   x= "hlkkl" + `klj` + `<li>dcdgf</li>`
+
+            html = "API DATA" + `<table><tr>`
+            // console.log(data)
+            data.map((v)=>{
+
+                html = html + `
+                <li>
+                    <img src="${v.url}" height="100px">
+                    
+                    </li>
+                `
+                // 
+            })
+             document.getElementById('a').innerHTML=html
+        })
+      }
+    </script>
+  </body>
+</html>

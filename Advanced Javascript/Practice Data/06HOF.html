@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       let x =  ()=>
+        {
+            return ("HOF 1")
+        }
+
+        arr = [1,2,[3,4,"hi",{name:"Vishal"}]];
+
+        function test1(x)
+        {
+            console.log(x);
+        }
+
+        test1("1")
+        test1(12.34)
+        test1(true)
+        test1(arr[2][3].name)
+        test1({name:"Frank"})
+        test1(x())
+        
+    </script>
+    
+</body>
+</html>

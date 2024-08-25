@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+
+    <!-- <input type="text" id="inp" onkeypress="GetText()"> -->
+    
+    <!-- <input type="text" id="inp" onkeydown="GetText()"> -->
+
+    <input type="text" id="inp" onkeyup="GetText()">
+
+    <textarea id="txt"></textarea>
+
+    <button onclick="GetText()" id="btn">Get Text</button>
+    <script>
+
+        inp_tag = document.getElementById('inp');
+        txt_tag = document.getElementById('txt');
+
+        // console.log(inp_tag,txt_tag,inp_tag.value)
+       
+        b1 = document.getElementById('btn')
+
+        // b1.addEventListener('mouseenter',GetText)
+        function GetText()
+        {
+            txt_tag.innerHTML = inp_tag.value;
+        }
+     
+        
+
+    </script>
+    
+</body>
+</html>

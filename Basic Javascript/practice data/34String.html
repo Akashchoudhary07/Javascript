@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // slice +,-,2 Index allowed (2,5);;both are indexes
+        // substring - Index NOT allowed (2,5);;both are indexes
+        // substr +,-,2 Index allowed (2,5);;first index and second will be length
+
+        // str = 'Hi "Devarsh..!"';
+        // \n,\"
+        // str ="HI \"Devarsh\"";
+        
+        
+        str = "Hello deVarSH how are you Devarsh Devarsh Devarsh..!";
+        document.write(str +"<br>")
+
+        // i=> case-in-sensitive 
+        // g -global
+
+        // document.write(str.replace(/devarsh/i,"Aakash") +"<br>")
+
+        document.write(str.replace(/devarsh/ig,"Aakash") +"<br>")
+
+        // document.write(str.replace("Devarsh","Aakash") +"<br>")
+
+        // document.write(str.replaceAll("Devarsh","Aakash") +"<br>")
+
+        // document.write(str[6]);//
+
+        // document.write(str.length);//17
+        
+        // s1 =1
+        // s2="hi"
+
+        // document.write(s1+s2)
+
+        
+      // document.write(str.slice(5) +"<br>")
+        // document.write(str.slice(-5) +"<br>")
+
+        // document.write(str.slice(3,5) +"<br>")
+
+        // document.write(str.slice(2,-4)+"<br>")
+
+        // document.write(str.substring(5) +"<br>")
+
+        //document.write(str.substring(-5) +"<br>")
+
+        //document.write(str.substring(3,5) +"<br>")
+
+
+        // document.write(str.substr(3,5) +"<br>")
+
+        // document.write(str.substr(-3,5) +"<br>")
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Name: <input type="text" id="nm" onblur=" Validate(nm,nmErr)"/>
+    <span id="nmErr"></span>
+    <br />
+    Email: <input type="text" id="em"  onblur=" Validate(em,emErr)" />
+    <span id="emErr"></span>
+
+    <!-- <button onclick="Validate()">kjh</button> -->
+
+    <script>
+    //   n = document.getElementById("nm");
+    //   spN = document.getElementById("nmErr");
+    //   e = document.getElementById("em");
+    //   spE = document.getElementById("emErr");
+
+    //   x= 12;
+
+    //   function t(x)
+    //   {
+    //     console.log(x)
+    //   }
+    //   t(12)
+      //   t(1.2)
+
+      
+      function Validate(x,y) {
+      
+       console.log(x,y)
+       if(x.value=="")
+       {
+        y.innerHTML ="*required..!"
+       }
+       
+      }
+    </script>
+  </body>
+</html>

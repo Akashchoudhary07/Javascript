@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Recursive Function : Fucntion calls itself.
+
+    Syntax: 
+
+    function functionName()
+    {
+        ..code;
+        functionName()
+    }
+    functionName();//calling a function -->
+
+    <script>
+        x=1;
+
+        num=10;
+
+        function test()
+        {
+           if(x<=10)
+           {
+            document.write(num+" X " +x+" = "+ num*x+"<br>")
+            x++;
+            test()
+           }
+        }
+        test()
+    </script>
+    
+</body>
+</html>
